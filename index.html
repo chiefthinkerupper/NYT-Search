@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>NYT Search Engine</title>
+
+	<link rel="icon" sizes="32x32" href="#">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="javascript/search.js"></script>	
+</head>
+<body>
+	<div class="content">
+		<section class="mysection jumbotron">
+			<h2><span class="glyphicon glyphicon-list-alt"/>&nbsp;<span class="myfont">New York Times Search</span></h2>
+		</section>
+
+		<section class="mysection panel panel-primary">
+			<div class="panel-heading">
+				<span class="glyphicon glyphicon-edit"/>&nbsp;<span class="myfont">Search Parameters</span>
+			</div>
+			<div class="panel-body">
+				<form id="article-form">
+					<label for="data-search">Search Term:</label><br>
+					<input type="text" class="form-control" id="data-search"><br>
+					<label for="data-number">Number of Records Retrieve:</label><br>
+					<input type="text" class="form-control" id="data-number"><br>
+					<label for="data-startyear">Start Year (Optional):</label><br>
+					<input type="text" class="form-control" id="data-startyear"><br>
+					<label for="data-endyear">End Year (Optional):</label><br>
+					<input type="text" class="form-control" id="data-endyear"><br>
+
+					<button class="btn btn-primary btn-md" id="select-article"><span class="glyphicon glyphicon-search"></span> Search</button>
+					<button class="btn btn-primary btn-md" id="clear-article"><span class="glyphicon glyphicon-trash"></span> Clear Results</button>
+				</form>
+			</div>
+		</section>
+
+		<section class="mysection panel panel-primary">
+			<div class="panel-heading">
+				<span class="glyphicon glyphicon-edit"/>&nbsp;<span class="myfont">Top Articles</span>
+			</div>
+			<div class="panel-body" id="display-article"></div>
+		</section>
+	</div>
+</body>
+</html>

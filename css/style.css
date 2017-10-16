@@ -1,0 +1,25 @@
+* {
+	box-sizing: border-box;
+}
+
+input {
+	width: 100%;
+}
+
+.myfont {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.mysection {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.jumbotron {
+	color: #fff;
+	background-color: #337ab7;
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
