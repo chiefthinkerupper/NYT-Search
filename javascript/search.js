@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 	$("#select-article").on("click", function(event) {
+		// prevent form from submitting
 		event.preventDefault();
 
 		var search = $("#data-search").val().trim();
@@ -42,6 +43,7 @@ $(document).ready(function() {
 	
 
 	$("#clear-article").on("click", function() {
+		// prevent form from submitting
 		event.preventDefault();
 
 		$("#display-article").empty();
